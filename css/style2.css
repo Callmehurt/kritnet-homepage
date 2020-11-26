@@ -1,0 +1,429 @@
+.contact-div {
+  background-color: white;
+  width: 100%;
+  height: 42rem;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  top: -7rem;
+}
+
+.contact-div .contact-side-img {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  background-color: yellow;
+  background-image: url("../img/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-right: 5rem;
+  z-index: 1;
+}
+
+.contact-side-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+  width: calc(100% - 45%);
+  height: 100%;
+  position: relative;
+  padding: 45px;
+  overflow: unset;
+}
+
+.contact-form label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.contact-form input {
+  height: 50px;
+  border-radius: 0;
+}
+
+#contact-btn {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: none;
+  height: 45px;
+  text-align: center;
+  width: 170px;
+  padding: 5px;
+  background-color: #00ad5f;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-div .contact-side-img ul {
+  margin-left: 30px;
+  top: 5vh;
+  color: white;
+  z-index: 1;
+  opacity: 1;
+}
+
+.contact-div .contact-side-img ul .bold-text {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.contact-div .contact-side-img ul li {
+  padding: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* support page css */
+
+.support-header {
+  height: auto;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  position: relative;
+}
+
+.support-header h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #23579f;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.support-header form {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  top: 7rem;
+}
+
+.support-header form input {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#search-btn {
+  height: 50px;
+  width: 50px;
+  background-color: #23579f;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.icon {
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.iconBx {
+  color: #23579f;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #23579f;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.iconBx:hover {
+  background-color: #23579f;
+  color: white;
+}
+
+.iconBx.active {
+  color: white;
+  background-color: #23579f;
+}
+
+.support-content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.contentBx {
+  display: none;
+  /* position: absolute; */
+}
+
+.contentBx.active {
+  display: block;
+}
+
+.contentBx h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: #23579f;
+  text-transform: uppercase;
+}
+
+.contentLink {
+  font-size: 18px;
+  font-weight: 400;
+  color: #23579f;
+  cursor: pointer;
+}
+
+.xContent {
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+  display: none;
+}
+
+.xContentBx.active .xContent {
+  display: block;
+}
+
+.xContentBx {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #ececec;
+  padding: 35px 50px 26px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#map {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* coverage page css */
+
+.map-page-section {
+  height: 28rem;
+  background-image: linear-gradient(#07273c, #be0000);
+  background-size: cover;
+  background-position: center;
+}
+
+.map-page-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.map-section {
+  height: 550px;
+  width: 100%;
+  position: absolute;
+  top: -10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.branches {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  background-color: #07273c;
+}
+
+.branch-detail {
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  background-color: #07273c;
+  padding: 2rem;
+  position: relative;
+}
+
+.branch-detail p {
+  line-height: 1rem;
+  color: white;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* ipad pro */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .map-page-section {
+    height: 15rem;
+  }
+
+  .contact-div {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    z-index: 0;
+  }
+
+  .contact-div .contact-side-img {
+    width: 100%;
+    height: 50%;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .contact-div .contact-side-img ul {
+    margin: 0 !important;
+    padding: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* iphones */
+@media (max-width: 767px) {
+  .map-page-section {
+    height: 8rem;
+  }
+
+  .map-page-wrapper {
+    height: 750px;
+  }
+
+  .map-wrapper {
+    height: 300px !important;
+  }
+
+  .map-section {
+    position: relative;
+    width: 100%;
+    top: -5rem;
+    height: auto;
+  }
+
+  .branches {
+    height: 250px;
+  }
+
+  .branch-detail {
+    height: 250px;
+  }
+
+  .contact-div {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .contact-div .contact-side-img {
+    width: 100%;
+    height: 50%;
+    padding: 40px;
+  }
+
+  .contact-div .contact-side-img ul {
+    margin: 0 !important;
+    padding: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .support-header {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .support-header h3 {
+    font-size: 25px;
+  }
+
+  .support-header form {
+    top: 4rem;
+    width: 80%;
+  }
+
+  .icon-border {
+    height: 50px;
+  }
+}
+
+/* Popular packages css */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+}
+
+.table thead {
+  background-image: linear-gradient(to right, #07273c, #be0000);
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  color: #bdb9b2;
+  background-color: #272b2c;
+}
+
+.table tbody tr:nth-child(odd) {
+  color: #bdb9b2;
+  background-color: #212425;
+}
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 30px;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+  }
+}
