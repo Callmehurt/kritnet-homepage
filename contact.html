@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style2.css">
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mail.js"></script>
 
 </head>
 
@@ -95,7 +96,7 @@
 <main>
 <section class="map-page-section"></section>   
 
-<section style="height: 650px;">
+<section class="contact-background">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-11 col-md-11 col-sm-12">
@@ -151,7 +152,7 @@
                                 <textarea id="message" type="text" class="form-control message"   name="message" required></textarea>
                             </div>
                         </div>
-                        <button type="submit" id="contact-btn">SEND MESSAGE</button>
+                        <button type="submit" id="contact-btn" onclick="submitForm()">SEND MESSAGE</button>
                     </form>
                  </div>
              </div>
@@ -235,33 +236,6 @@
 <footer>
 
 </footer>
-
-
-<script>
-    const submitForm = document.getElementById('contact-form');
-    submitForm.addEventListener('submit', function(e){
-        e.preventDefault();
-        let fname = document.querySelector(".fname").value;
-        let lname = document.querySelector(".lname").value;
-        let phone = document.querySelector(".phone").value;
-        let email = document.querySelector(".email").value;
-        let message = document.querySelector(".message").value;
-
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "your email",
-            Password : "your password",
-            To : 'to whom to send(In this case you have to send message to yourself)',
-            From : "your email",
-            Subject : "This is the subject",
-            Body : `Fullname: ${fname} ${lname} <br/> Phone: ${phone} <br/> Email: ${email} <br/> Message: ${message}`
-        }).then(
-        message => alert(message),
-        submitForm.reset()
-        );
-    });
-</script>
-
 
 
 <!-- Scroll Up -->
