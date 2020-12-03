@@ -825,6 +825,10 @@ html {
   .contact-background {
     height: 1000px;
   }
+
+  .contact-div {
+    width: calc(100% / 1.1) !important;
+  }
 }
 
 @media (max-width: 991px) {
