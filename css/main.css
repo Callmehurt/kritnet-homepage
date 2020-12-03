@@ -841,6 +841,10 @@ html {
   .slicknav_btn {
     margin-top: 5px !important;
   }
+
+  .contact-side-img ul {
+    margin-left: -20px !important;
+  }
 }
 
 @media (max-width: 765px) {
