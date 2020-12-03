@@ -816,3 +816,35 @@ html {
     left: 2rem;
   }
 }
+
+.contact-background {
+  height: 650px;
+}
+
+@media (max-width: 768px) {
+  .contact-background {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-img {
+    margin-top: -10px;
+    width: 120px;
+  }
+
+  .support-header {
+    margin-bottom: 50px;
+    height: 120px !important;
+  }
+
+  .slicknav_btn {
+    margin-top: 5px !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .logo-img {
+    width: 150px;
+  }
+}

@@ -3445,8 +3445,8 @@ hero-btn {
     padding: 15px 0px;
   }
   .logo-img {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 150px;
   }
 }
 
@@ -3463,7 +3463,11 @@ hero-btn {
   .logo-img {
     height: 50px;
     width: 100px;
-    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+
+  .slicknav_btn{
+    margin-top: -5px !important;
   }
 }
 

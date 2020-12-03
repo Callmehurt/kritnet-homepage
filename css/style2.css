@@ -352,6 +352,7 @@
   .support-header {
     margin-top: 0;
     padding: 0;
+    height: auto !important;
   }
 
   .support-header h3 {
