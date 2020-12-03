@@ -13,10 +13,10 @@ submitForm.addEventListener('submit', function(e){
 
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "callmehurt.hurt@gmail.com",
-        Password : "bhfcrcxmmtbivgtk",
-        To : 'callmehurt.hurt@gmail.com',
-        From : "callmehurt.hurt@gmail.com",
+        Username : "your email",
+        Password : "your password",
+        To : 'to whom(usual your own email)',
+        From : "your email",
         Subject : "This is the subject",
         Body : `Fullname: ${fname} ${lname} <br/> Phone: ${phone} <br/> Email: ${email} <br/> Message: ${message}`
     }).then(
